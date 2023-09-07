@@ -1,0 +1,766 @@
+/* Ini adalah pengaturan global untuk elemen-elemen HTML */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  
+}
+
+/* Pengaturan font-size dan  untuk elemen HTML */
+html {
+  font-size: 62.5%; /* Ukuran font dasar diatur menjadi 10px */
+  overflow-x: hidden; /* Menghilangkan scroll horizontal jika ada konten yang melebihi lebar layar */
+}
+
+/* Pengaturan scrollbar kustom */
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: crimson;
+  border-radius: 5rem;
+}
+
+/* Pengaturan global untuk body */
+body {
+  background: #0d0d0d; /* Warna latar belakang body */
+  padding-bottom: 6.5rem; /* Padding bawah untuk mencegah tumpang tindih dengan navbar */
+}
+
+/* Pengaturan umum untuk bagian-bagian dalam halaman */
+section {
+  padding: 5rem 9%; /* Ruang jeda pada sisi halaman */
+}
+
+/* Gaya untuk judul berjudul "heading" */
+.heading {
+  text-align: center;
+  font-size: 6vw; /* Ukuran font yang responsif */
+  color: #fff; /* Warna teks */
+  margin-bottom: 3rem; /* Ruang bawah dari judul */
+  text-transform: uppercase; /* Teks diubah menjadi huruf besar */
+}
+
+/* Gaya untuk teks berwarna crimson di dalam judul */
+.heading span {
+  text-transform: uppercase;
+  color: crimson;
+}
+
+/* Gaya untuk tombol */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: crimson;
+  padding: .7rem;
+  font-size: 1.7rem;
+  color: #fff;
+  padding-left: 2rem;
+}
+
+/* Gaya ikon di dalam tombol */
+.btn i {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  text-align: center;
+  background: #fff;
+  color: crimson;
+  border-radius: 50%;
+  margin-left: 1rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+/* Gaya ikon di tombol saat dihover */
+.btn:hover i {
+  margin-left: 2rem;
+}
+
+/* Gaya untuk navbar */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* Gaya untuk tautan dalam navbar */
+.navbar a {
+  padding: 2rem;
+  font-size: 2rem;
+  background: #1a1a1a;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+/* Gaya ikon dalam tautan navbar */
+.navbar a i {
+  color: crimson;
+  padding-right: .5rem;
+}
+
+/* Gaya untuk tautan navbar saat dihover */
+.navbar a:hover {
+  background: crimson;
+  padding-bottom: 6rem;
+}
+
+/* Gaya untuk ikon dalam tautan navbar saat dihover */
+.navbar a:hover i {
+  color: #fff;
+}
+
+/* Gaya untuk bagian home */
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4rem;
+  min-height: calc(100vh - 6.5rem);
+}
+
+/* Gaya untuk gambar di dalam home section */
+.home .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  text-align: center;
+}
+
+/* Gaya untuk gambar profil di dalam home section */
+.home .image img {
+  height: 50rem;
+  width: 50rem;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; /* Membuat gambar berbentuk lingkaran */
+}
+
+/* Gaya untuk konten teks di dalam home section */
+.home .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+/* Gaya untuk judul teks "hello" dan "i am Ayu Veriska" di dalam home section */
+.home .content h3 {
+  color: #fff;
+  font-size: 4rem;
+  padding-bottom: .5rem;
+}
+
+/* Gaya untuk teks berwarna crimson di dalam home section */
+.home .content span {
+  font-size: 3rem;
+  color: crimson;
+  padding: .5rem 0;
+  display: block;
+}
+
+/* Gaya untuk paragraf deskripsi di dalam home section */
+.home .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".about .row" */
+.about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".about .row .info-container" */
+.about .row .info-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+/* Pengaturan tampilan untuk teks berada dalam elemen dengan kelas ".about .row .info-container h1" */
+.about .row .info-container h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".about .row .info-container .box-container" */
+.about .row .info-container .box-container {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".about .row .info-container .box-container .box" */
+.about .row .info-container .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+/* Pengaturan tampilan untuk teks berada dalam elemen dengan kelas ".about .row .info-container .box-container .box h3" */
+.about .row .info-container .box-container .box h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+/* Pengaturan tampilan untuk teks berada dalam elemen dengan kelas ".about .row .info-container .box-container .box h3 span" */
+.about .row .info-container .box-container .box h3 span {
+  color: #aaa;
+  font-weight: lighter;
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".about .row .count-container" */
+.about .row .count-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".about .row .count-container .box" */
+.about .row .count-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  padding: 3rem 4rem;
+  border-radius: .5rem;
+  background: #1a1a1a;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+/* Pengaturan tampilan untuk teks berada dalam elemen dengan kelas ".about .row .count-container .box h3" */
+.about .row .count-container .box h3 {
+  font-size: 5rem;
+  color: crimson;
+}
+
+/* Pengaturan tampilan untuk teks berada dalam elemen dengan kelas ".about .row .count-container .box p" */
+.about .row .count-container .box p {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Pengaturan tampilan untuk kotak-kotak yang berada dalam elemen dengan kelas ".skills .box-container" */
+.skills .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* Pengaturan tampilan untuk kotak individual dalam elemen dengan kelas ".skills .box-container .box" */
+.skills .box-container .box {
+  padding: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: .5rem;
+  background: #1a1a1a;
+}
+
+/* Pengaturan tampilan saat kursor mouse berada di atas kotak dalam elemen dengan kelas ".skills .box-container .box" */
+.skills .box-container .box:hover {
+  background: #fff;
+}
+
+/* Pengaturan tampilan teks judul (h3) dalam kotak saat kursor mouse berada di atasnya */
+.skills .box-container .box:hover h3 {
+  color: #0d0d0d;
+}
+
+/* Pengaturan tampilan gambar dalam kotak-kotak dalam elemen dengan kelas ".skills .box-container .box" */
+.skills .box-container .box img {
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+/* Pengaturan tampilan untuk judul (h3) dalam kotak pada elemen dengan kelas ".skills .box-container .box" */
+.skills .box-container .box h3 {
+  color: #fff; /* Warna teks adalah putih */
+  font-size: 1.7rem; /* Ukuran font 1.7 rem */
+  font-weight: normal; /* Ketebalan font normal (tidak tebal) */
+  text-transform: uppercase; /* Teks diubah menjadi huruf besar semua */
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".education .box-container" */
+.education .box-container {
+  display: -webkit-box; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser lama */
+  display: -ms-flexbox; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan Internet Explorer */
+  display: flex; /* Display menggunakan model kotak fleksibel */
+  -ms-flex-wrap: wrap;  /* Memungkinkan elemen-elemen untuk membalik baris saat layar sempit */
+      flex-wrap: wrap; /* Memungkinkan elemen-elemen untuk membalik baris saat layar sempit */
+}
+
+/* Pengaturan tampilan untuk kotak individual dalam elemen dengan kelas ".education .box-container .box" */
+.education .box-container .box {
+  -webkit-box-flex: 1; /* Properti flex-box yang berlaku untuk browser berbasis Webkit (Safari, Chrome) */
+      -ms-flex: 1 1 40rem; /* Properti flex-box yang berlaku untuk Internet Explorer */
+          flex: 1 1 40rem; /* Properti flex-box */
+  margin-left: 2rem; /* Margin kiri sebesar 2 rem */
+  padding-top: 0; /* Padding atas diatur menjadi 0 */
+  padding-bottom: 0; /* Padding bawah diatur menjadi 0 */
+  padding-left: 3.5rem; /* Padding kiri sebesar 3.5 rem */
+  padding-bottom: 3rem; /* Padding bawah sebesar 3 rem */
+  border-left: 0.1rem solid #aaa; /* Garis vertikal tipis sebelah kiri dengan warna #aaa */
+  position: relative; /* Elemen memiliki posisi relatif dalam konteksnya */
+}
+
+/* Pengaturan tampilan untuk ikon (i) dalam kotak pada elemen dengan kelas ".education .box-container .box" */
+.education .box-container .box i {
+  height: 4.5rem; /* Tinggi ikon sebesar 4.5 rem */
+  width: 4.5rem; /* Lebar ikon sebesar 4.5 rem */
+  line-height: 4.5rem; /* Jarak antar baris dalam ikon sama dengan tinggi ikon */
+  font-size: 1.7rem;  /* Ukuran font ikon sebesar 1.7 rem */
+  border-radius: 50%; /* Ikon memiliki bentuk lingkaran dengan sudut yang dibulatkan */
+  background: crimson; /* Latar belakang ikon berwarna crimson */
+  color: #fff; /* Warna teks dalam ikon adalah putih */
+  text-align: center; /* Teks dalam ikon diatur menjadi berada di tengah */
+  position: absolute; /* Ikon memiliki posisi absolut dalam kotaknya */
+  top: -1rem; /* Ikon ditinggikan 1 rem dari bagian atas kotak */
+  left: -2.5rem; /* Ikon digeser ke kiri sejauh 2.5 rem dari bagian kiri kotak */
+}
+
+/* Pengaturan tampilan untuk elemen span dalam kotak pada elemen dengan kelas ".education .box-container .box" */
+.education .box-container .box span {
+  font-size: 1.7rem; /* Ukuran font sebesar 1.7 rem */
+  color: #fff; /* Warna teks adalah putih */
+  border-radius: 5rem; /* Elemen span memiliki sudut yang dibulatkan sehingga menyerupai bentuk lingkaran */
+  padding: .5rem 1.5rem; /* Padding pada elemen span */
+  background: #1a1a1a; /* Latar belakang elemen span berwarna #1a1a1a */
+}
+
+/* Pengaturan tampilan untuk judul (h3) dalam kotak pada elemen dengan kelas ".education .box-container .box" */
+.education .box-container .box h3 {
+  font-size: 2rem; /* Ukuran font sebesar 2 rem */
+  padding: 1rem 0; /* Padding atas dan bawah sebesar 1 rem, tanpa padding sisi */
+  color: #fff; /* Warna teks adalah putih */
+  padding-top: 3rem; /* Padding atas ditambah sebesar 3 rem dari padding awal */
+  font-weight: normal; /* Ketebalan font normal (tidak tebal) */
+}
+
+/* Pengaturan tampilan untuk teks paragraf (p) dalam kotak pada elemen dengan kelas ".education .box-container .box" */
+.education .box-container .box p {
+  font-size: 1.5rem; /* Ukuran font sebesar 1.5 rem */
+  color: #aaa; /* Warna teks adalah abu-abu (#aaa) */
+  line-height: 2; /* Jarak antar baris sebesar 2 (1 rem) */
+}
+
+/* Pengaturan tampilan untuk elemen dengan kelas ".portfolio" */
+.portfolio {
+  text-align: center; /* Teks diatur menjadi rata tengah */
+}
+
+/* Pengaturan tampilan untuk container kotak pada elemen dengan kelas ".portfolio .box-container" */
+.portfolio .box-container {
+  display: -ms-grid; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Microsoft (Internet Explorer) */
+  display: grid; /* Display menggunakan model kotak fleksibel */
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit]; /* Kolom grid berukuran minimal 31rem dan dapat diisi dengan 1 fr (fraksi) sebanyak yang diperlukan */
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr)); /* Kolom grid berukuran minimal 31rem dan dapat diisi dengan 1 fr (fraksi) sebanyak yang diperlukan */
+  gap: 1.5rem; /* Jarak antara kotak grid sebesar 1.5 rem */
+  margin-bottom: 2rem; /* Margin bawah sebesar 2 rem */
+}
+
+/* Pengaturan tampilan untuk kotak individual dalam elemen dengan kelas ".portfolio .box-container .box" */
+.portfolio .box-container .box {
+  height: 30rem; /* Tinggi kotak sebesar 30 rem */
+  overflow: hidden; /* Konten yang melebihi kotak akan disembunyikan (tidak ditampilkan) */
+  position: relative; /* Elemen memiliki posisi relatif dalam konteksnya */
+}
+
+/* Ketika kotak dalam elemen dengan kelas ".portfolio .box-container .box" dihover, tampilkan konten (".content") dengan animasi */
+.portfolio .box-container .box:hover .content {
+  -webkit-transform: translateY(0%); /* Menggeser konten ke atas sehingga tampil di dalam kotak */
+          transform: translateY(0%); /* Menggeser konten ke atas sehingga tampil di dalam kotak */
+}
+
+/* Pengaturan tampilan untuk gambar dalam kotak pada elemen dengan kelas ".portfolio .box-container .box" */
+.portfolio .box-container .box img {
+  height: 100%; /* Tinggi gambar mencakup seluruh kotak */
+  width: 100%; /* Lebar gambar mencakup seluruh kotak */
+  -o-object-fit: cover; /* Penyesuaian gambar agar mencakup seluruh kotak dengan tetap mempertahankan rasio aspek */
+     object-fit: cover; /* Penyesuaian gambar agar mencakup seluruh kotak dengan tetap mempertahankan rasio aspek */
+}
+
+
+/* Pengaturan tampilan untuk konten dalam kotak pada elemen dengan kelas ".portfolio .box-container .box" */
+.portfolio .box-container .box .content {
+  position: absolute;  /* Konten memiliki posisi absolut dalam kotaknya */
+  top: 0; /* Konten diletakkan di bagian atas kotak */
+  left: 0; /* Konten diletakkan di bagian kiri kotak */
+  height: 100%; /* Tinggi konten mencakup seluruh kotak */
+  width: 100%; /* Lebar konten mencakup seluruh kotak */
+  background: #1a1a1a; /* Latar belakang konten berwarna #1a1a1a */
+  display: -webkit-box; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Webkit (Safari, Chrome) */
+  display: -ms-flexbox; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan Internet Explorer */
+  display: flex; /* Display menggunakan model kotak fleksibel */
+  -webkit-box-orient: vertical; /* Menyusun elemen-elemen dalam model kotak fleksibel secara vertikal */
+  -webkit-box-direction: normal; /* Elemen-elemen dalam model kotak fleksibel disusun dari atas ke bawah */
+      -ms-flex-flow: column; /* Menyusun elemen-elemen dalam model kotak fleksibel menjadi satu kolom */
+          flex-flow: column; /* Menyusun elemen-elemen dalam model kotak fleksibel menjadi satu kolom */
+  -webkit-box-align: center; /* Elemen-elemen diatur menjadi rata tengah secara vertikal dalam model kotak fleksibel */
+      -ms-flex-align: center; /* Elemen-elemen diatur menjadi rata tengah secara vertikal dalam model kotak fleksibel untuk Internet Explorer */
+          align-items: center; /* Elemen-elemen diatur menjadi rata tengah secara vertikal dalam model kotak fleksibel */
+  -webkit-box-pack: center; /* Elemen-elemen diatur menjadi rata tengah secara horizontal dalam model kotak fleksibel */
+      -ms-flex-pack: center;  /* Elemen-elemen diatur menjadi rata tengah secara horizontal dalam model kotak fleksibel untuk Internet Explorer */
+          justify-content: center; /*lemen-elemen diatur menjadi rata tengah secara horizontal dalam model kotak fleksibel */
+  padding: 2rem; /* Padding sebesar 2 rem di sekeliling konten */
+  -webkit-transform: translateY(-100%); /* Konten digeser ke atas hingga di luar kotak */
+          transform: translateY(-100%); /* Konten digeser ke atas hingga di luar kotak */
+  -webkit-transition: .2s linear;  /* Transisi animasi selama 0.2 detik dengan efek linear */
+  transition: .2s linear; /* Transisi animasi selama 0.2 detik dengan efek linear */
+}
+
+/* Pengaturan tampilan untuk judul (h3) dalam konten kotak pada elemen dengan kelas ".portfolio .box-container .box .content" */
+.portfolio .box-container .box .content h3 {
+  font-size: 2.5rem;  /* Ukuran font sebesar 2.5 rem */
+  color: #fff; /* Warna teks adalah putih */
+  text-transform: uppercase; /* Teks diubah menjadi huruf besar semua */
+  font-weight: normal; /* Ketebalan font normal (tidak tebal) */
+}
+
+/* Pengaturan tampilan untuk paragraf (p) dalam konten kotak pada elemen dengan kelas ".portfolio .box-container .box .content" */
+.portfolio .box-container .box .content p {
+  padding: 1rem 0; /* Padding atas dan bawah sebesar 1 rem, tanpa padding sisi kiri dan kanan */
+  font-size: 1.5rem; /* Ukuran font sebesar 1.5 rem */
+  line-height: 2; /* Jarak baris (leading) adalah dua kali ukuran font */
+  color: #aaa; /* Warna teks adalah abu-abu (#aaa) */
+}
+
+/* Pengaturan tampilan untuk tautan (a) dalam konten kotak pada elemen dengan kelas ".portfolio .box-container .box .content" */
+.portfolio .box-container .box .content a {
+  font-size: 2rem; /* Ukuran font sebesar 2 rem */
+  color: crimson; /* Warna teks adalah crimson */
+}
+
+/* Ketika tautan (a) dalam konten kotak pada elemen dengan kelas ".portfolio .box-container .box .content" dihover, ubah warna teks menjadi putih */
+.portfolio .box-container .box .content a:hover {
+  color: #fff; /* Warna teks diubah menjadi putih (#fff) saat dihover */
+}
+
+
+/* Pengaturan tampilan untuk baris (row) dalam elemen dengan kelas ".contact" */
+.contact .row {
+  display: -webkit-box; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Webkit */
+  display: -ms-flexbox; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Microsoft (Internet Explorer) */
+  display: flex; /* Display menggunakan model kotak fleksibel */
+  -webkit-box-align: center; /* Posisi vertikal konten dalam baris diatur menjadi tengah */
+      -ms-flex-align: center; /* Posisi vertikal konten dalam baris diatur menjadi tengah (untuk browser berbasis Microsoft) */
+          align-items: center;  /* Posisi vertikal konten dalam baris diatur menjadi tengah */
+  -ms-flex-wrap: wrap; /* Item dalam baris dapat melilit (wrap) saat ruang terbatas */
+      flex-wrap: wrap; /* Item dalam baris dapat melilit (wrap) saat ruang terbatas */
+  gap: 2rem; /* Jarak antara item dalam baris sebesar 2 rem */
+}
+
+/* Pengaturan tampilan untuk kontainer informasi dalam elemen dengan kelas ".contact .row" */
+.contact .row .info-container {
+  width: 40rem; /* Lebar kontainer informasi sebesar 40 rem */
+}
+
+/* Pengaturan tampilan untuk judul (h1) dalam kontainer informasi pada elemen dengan kelas ".contact .row .info-container" */
+.contact .row .info-container h1 {
+  font-size: 3rem; /* Ukuran font sebesar 3 rem */
+  text-transform: uppercase; /* Teks diubah menjadi huruf kapital (uppercase) */
+  color: #fff; /* Warna teks adalah putih (#fff) */
+  padding-bottom: 1rem; /* Padding bawah sebesar 1 rem */
+}
+
+/* Pengaturan tampilan untuk paragraf (p) dalam kontainer informasi pada elemen dengan kelas ".contact .row .info-container" */
+.contact .row .info-container p {
+  font-size: 1.5rem; /* Ukuran font sebesar 1.5 rem */
+  line-height: 2; /* Jarak baris (leading) adalah dua kali ukuran font */
+  color: #aaa; /* Warna teks adalah abu-abu (#aaa) */
+  padding: 1rem 0; /* Padding atas dan bawah sebesar 1 rem, tanpa padding sisi kiri dan kanan */
+}
+
+/* Pengaturan padding atas dan bawah sebesar 2 rem pada kontainer kotak dalam elemen dengan kelas ".contact .row .info-container .box-container" */
+.contact .row .info-container .box-container {
+  padding: 2rem 0; 
+}
+
+/* Pengaturan tampilan untuk kotak dalam kotainer kotak dalam elemen dengan kelas ".contact .row .info-container .box-container .box" */
+.contact .row .info-container .box-container .box {
+  display: -webkit-box; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Webkit */
+  display: -ms-flexbox; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Microsoft (Internet Explorer) */
+  display: flex; /* Display menggunakan model kotak fleksibel */
+  gap: 2rem; /* Jarak antara item dalam kotak sebesar 2 rem */
+  padding: 1rem 0; /* Padding atas dan bawah sebesar 1 rem, tanpa padding sisi kiri dan kanan */
+}
+
+/* Pengaturan tampilan untuk ikon (i) dalam kotak dalam kotainer kotak dalam elemen dengan kelas ".contact .row .info-container .box-container .box" */
+.contact .row .info-container .box-container .box i {
+  font-size: 3rem; /* Ukuran font sebesar 3 rem */
+  color: crimson; /* Warna teks adalah crimson */
+}
+
+/* Pengaturan tampilan untuk judul (h3) dalam kotak dalam kotainer kotak dalam elemen dengan kelas ".contact .row .info-container .box-container .box" */
+.contact .row .info-container .box-container .box h3 {
+  font-size: 2rem; /* Ukuran font sebesar 2 rem */
+  color: #fff; /* Warna teks adalah putih (#fff) */
+}
+
+/* Pengaturan tampilan untuk tautan (a) dalam kotainer "share" dalam elemen dengan kelas ".contact .row .info-container" */
+.contact .row .info-container .share a {
+  font-size: 2rem; /* Ukuran font sebesar 2 rem */
+  height: 4.5rem; /* Tinggi elemen sebesar 4.5 rem */
+  width: 4.5rem; /* Lebar elemen sebesar 4.5 rem */
+  line-height: 4.5rem; /* Line-height sebesar 4.5 rem */
+  border-radius: 50%; /* Mengatur sudut elemen menjadi bundar */
+  background: #1a1a1a; /* Warna latar belakang elemen adalah abu-abu tua (#1a1a1a) */
+  color: #fff; /* Warna teks adalah putih (#fff) */
+  text-align: center; /* Teks diatur menjadi berada di tengah */
+  margin-right: .3rem; /* Margin sebelah kanan sebesar 0.3 rem */
+}
+
+/* Ketika tautan (a) dalam kotainer "share" dihover, ubah latar belakangnya menjadi crimson */
+.contact .row .info-container .share a:hover {
+  background: crimson;  /* Warna latar belakang elemen diubah menjadi crimson saat dihover */
+}
+
+/* Pengaturan tampilan untuk elemen form dalam elemen dengan kelas ".contact .row" */
+.contact .row form {
+  -webkit-box-flex: 1; /* Bagian form akan mengisi ruang yang tersedia dalam baris (flex) */
+      -ms-flex: 1 1 42rem; /* Bagian form akan mengisi ruang yang tersedia dalam baris (flex), dengan lebar minimum 42 rem */
+          flex: 1 1 42rem; /* Bagian form akan mengisi ruang yang tersedia dalam baris (flex), dengan lebar minimum 42 rem */
+}
+
+/* Pengaturan tampilan untuk kotak input dalam elemen form dalam elemen dengan kelas ".contact .row" */
+.contact .row form .inputBox {
+  display: -webkit-box; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Webkit */
+  display: -ms-flexbox; /* Display menggunakan model kotak fleksibel untuk kompatibilitas dengan browser berbasis Microsoft (Internet Explorer) */
+  display: flex; /* Display menggunakan model kotak fleksibel */
+  -ms-flex-wrap: wrap; /* Item dalam kotak input dapat melilit (wrap) saat ruang terbatas (untuk browser berbasis Microsoft) */
+      flex-wrap: wrap; /* Item dalam kotak input dapat melilit (wrap) saat ruang terbatas */
+  -webkit-box-pack: justify; /* Item dalam kotak input akan terdistribusi merata secara horizontal */
+      -ms-flex-pack: justify; /* Item dalam kotak input akan terdistribusi merata secara horizontal (untuk browser berbasis Microsoft) */
+          justify-content: space-between; /* Item dalam kotak input akan terdistribusi merata dengan ruang di antara mereka */
+}
+
+/* Pengaturan tampilan untuk elemen input dalam kotak input pada elemen form dalam elemen dengan kelas ".contact .row" */
+.contact .row form .inputBox input {
+  width: 49%;  /* Lebar elemen input sebesar 49% dari kontainer kotak input */
+}
+
+/* Pengaturan tampilan untuk elemen input dan textarea dalam formulir pada elemen dengan kelas ".contact .row" */
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  border-radius: 5rem;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: none;
+  margin: .7rem 0;
+  background: #1a1a1a;
+}
+
+/* Pengaturan khusus untuk elemen textarea dalam formulir pada elemen dengan kelas ".contact .row" */
+.contact .row form textarea {
+  width: 100%;
+  border-radius: 1rem;
+  resize: none;
+  height: 25rem;
+}
+
+/* Pengaturan tampilan untuk tombol dalam formulir pada elemen dengan kelas ".contact .row" */
+.contact .row form .btn {
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+/* Ketika tombol dalam formulir dihover, ubah latar belakangnya menjadi putih dan warna teks menjadi gelap */
+.contact .row form .btn:hover {
+  background: #fff;
+  color: #0d0d0d;
+}
+
+/* Penerapan gaya CSS khusus saat lebar layar maksimum adalah 1200 piksel */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Ketika lebar layar maksimum adalah 768 piksel atau kurang, terapkan perubahan tampilan berikut */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 12vw; /* Ukuran font dalam elemen dengan kelas ".heading" akan menjadi 12% dari lebar viewport */
+  }
+  .navbar a i {
+    padding: 0; /* Hapus padding dalam elemen dengan kelas ".navbar a i" */
+  }
+  .navbar a span {
+    display: none; /* Sembunyikan elemen dengan kelas ".navbar a span" */
+  }
+  .navbar a:hover {
+    padding-bottom: 2rem; /* Tambahkan padding bawah sebesar 2 rem pada elemen navigasi saat dihover */
+  }
+  .home {
+    text-align: center; /* Teks dalam elemen dengan kelas ".home" akan berada di tengah */
+    gap: 2rem; /* Jarak antara elemen-elemen dalam elemen dengan kelas ".home" sebesar 2 rem */
+  }
+  .home .image img {
+    height: 30rem; /* Tinggi gambar dalam elemen dengan kelas ".home .image" sebesar 30 rem */
+    width: 30rem; /* Lebar gambar dalam elemen dengan kelas ".home .image" sebesar 30 rem */
+  }
+  .home .content h3 {
+    font-size: 3rem; /* Ukuran font dalam elemen dengan kelas ".home .content h3" sebesar 3 rem */
+  }
+  .home .content span {
+    font-size: 2.5rem; /* Ukuran font dalam elemen dengan kelas ".home .content span" sebesar 2.5 rem */
+  }
+  .contact .row form .inputBox input {
+    width: 100%; /* Lebar elemen input dalam kotak input pada elemen form dalam elemen dengan kelas ".contact .row" adalah 100% */
+    margin-bottom: 1rem; /* Tambahkan margin bawah sebesar 1 rem pada elemen input */
+  }
+}
+
+/* Ketika lebar layar maksimum adalah 450 piksel atau kurang, terapkan perubahan tampilan berikut */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%; /* Ukuran font dalam dokumen HTML akan menjadi 50% dari ukuran default saat layar berukuran kurang dari 450 piksel */
+  }
+}
+
+
+/* Gaya untuk bagian "biography" */
+.sec-top {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.sec-top span {
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid crimson;
+  font-family: var(--font-Dosis);
+  font-weight: 700;
+  text-transform: capitalize;
+  color:white;
+}
+
+.biography .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.biography .content .text {
+  padding: 20px 60px 20px 20px;
+  width: 50%;
+}
+.biography .content .text h3 {
+  color: crimson;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.biography .content .text span {
+  color: white;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 30px;
+  font-family: var(--font-Dosis);
+}
+.biography .content .text p {
+  color: white;
+  padding: 20px 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.biography .content .div-img {
+  width: 50%;
+  padding-bottom: 100px;
+}
+.biography .content .div-img img {
+  width:100%;
+}
+.biography .content2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.biography .content2 .text2 {
+  padding: 20px 60px 20px 20px;
+  width: 50%;
+}
+.biography .content2 .text2 h3 {
+  color: crimson;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.biography .content2 .text2 span {
+  color: white;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 30px;
+  font-family: var(--font-Dosis);
+}
+.biography .content2 .text2 p {
+  color: white;
+  padding: 20px 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.biography .content2 .div-img2 {
+  width: 50%;
+  padding-bottom: 100px;
+}
+.biography .content2 .div-img2 img {
+  width:100%;
+}
